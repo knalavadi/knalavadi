@@ -27,6 +27,20 @@ TWENTITHIRD_LINE_VERT = (25,-200)
 TWENTIFOURTH_LINE_VERT = (75,-150)
 TWENTIFIFTH_LINE_HORIZ = (75,-300)
 TWENTISIXTH_LINE_HORIZ = (25,-250)
+TWENTISEVENTH_LINE_VERT = (-125, 250)
+TWENTIEIGTH_LINE_VERT = (-75, -300)
+TWENTININETH_LINE _HORIZ = (-75, -350)
+THIRTIETH_LINE_HORIZ = (-75, -350)
+THIRTIFIRST_LINE_HORIZ = (-125, -400)
+THIRTISECOND_LINE_VERT = (300, -400)
+THIRTITHIRD_LINE_VERT = (250, -350)
+
+#box 1
+THIRTIFOURTH_LINE_HORIZ = (250, -275)
+THIRTIFIFTH_LINE_HORIZ = (300, -275)
+THIRTISIXTH_LINE_VERT = (400, -275)
+THIRTISEVENTH_LINE_VERT = (150, -275)
+
 
 
 turtle.setup(1000,1000)	# set the window size to 1000 by 1000 pixels
@@ -194,11 +208,74 @@ krisha.penup()
 
 krisha.setposition(TWENTISIXTH_LINE_HORIZ)
 krisha.pendown()
-# krisha.right(90)
 krisha.forward(150)
 krisha.penup()
 
+krisha.setposition(TWENTISEVENTH_LINE_VERT)
+krisha.pendown()
+krisha.left(90)
+krisha.forward(150)
+krisha.penup()
 
+krisha.setposition(TWENTIEIGTH_LINE_VERT)
+krisha.pendown()
+krisha.forward(50)
+krisha.penup()
+
+krisha.setposition(TWENTININETH_LINE_HORIZ)
+krisha.pendown()
+krisha.forward(0)
+krisha.penup()
+
+krisha.setposition(THIRTIETH_LINE_HORIZ)
+krisha.pendown()
+krisha.left(90)
+krisha.forward(325)
+krisha.penup()
+
+krisha.setposition(THIRTISECOND_LINE_VERT)
+krisha.pendown()
+krisha.left(90)
+krisha.forward(125)
+krisha.penup()
+
+krisha.setposition(THIRTITHIRD_LINE_VERT)
+krisha.pendown()
+krisha.forward(75)
+krisha.penup()
+
+krisha.setposition(THIRTIFOURTH_LINE_HORIZ)
+krisha.pendown()
+krisha.left(90)
+krisha.forward(100)
+krisha.penup()
+
+krisha.setposition(THIRTIFIFTH_LINE_HORIZ)
+krisha.pendown()
+krisha.forward(100)
+krisha.penup()
+
+krisha.setposition(THIRTISIXTH_LINE_VERT)
+krisha.pendown()
+krisha.right(90)
+krisha.forward(200)
+krisha.penup()
+
+krisha.setposition(THIRTISEVENTH_LINE_VERT)
+krisha.pendown()
+krisha.forward(200)
+krisha.penup()
+
+screen = turtle.getscreen()
+def goandprint(x,y):
+	gotoresult = turtle.goto(x, y)
+	print(turtle.xcor(), turtle.ycor())
+	return gotoresult
+
+screen.onscreenclick(gotoandprint)
+
+
+	
 #krisha.pencolor("#00ffaa") 
 
 
