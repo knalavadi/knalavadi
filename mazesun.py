@@ -77,22 +77,22 @@ def gotoandprint(x,y):
   else:
     gotoresult = turtle.goto(x, y)
     print(turtle.xcor(), turtle.ycor())
-    # print topPoint, bottomPoint
+    print (topPoint, bottomPoint)
     return gotoresult
 
 screen.onscreenclick(gotoandprint)
 
 
-# def intersection(topPoint, turtlePoint, bottomPoint):
-#   print "topPoint: ", topPoint
-#   print "bottomPoint: ", bottomPoint
-#   print "turtle.pos(): ", turtle.pos()
-#   print "turlePoint.xcor(): ", turtlePoint.xcor()
-#   print "turlePoint.ycor(): ", turtlePoint.ycor()
-#   if turtlePoint.xcor() <= max(topPoint[0], bottomPoint[0]) and turtlePoint.xcor() >= min(topPoint[0], bottomPoint[0]) and turtlePoint.ycor() <= max(topPoint[1], bottomPoint[1]) and turtlePoint.ycor() >= min(topPoint[1], bottomPoint[1]):
-#     print "hit boundary"
-# if turtlePoint.xcor() >= -450 and <= -350 and turtlePoint.ycor < -300  and > -350
-
+def intersection(topPoint, turtlePoint, bottomPoint):
+  print "topPoint: ", topPoint
+  print "bottomPoint: ", bottomPoint
+  print "turtle.pos(): ", turtle.pos()
+  print "turlePoint.xcor(): ", turtlePoint.xcor()
+  print "turlePoint.ycor(): ", turtlePoint.ycor()
+  if turtlePoint.xcor() <= max(topPoint[0], bottomPoint[0]) and turtlePoint.xcor() >= min(topPoint[0], bottomPoint[0]) and turtlePoint.ycor() <= max(topPoint[1], bottomPoint[1]) and turtlePoint.ycor() >= min(topPoint[1], bottomPoint[1]):
+    print "hit boundary"
+  if turtlePoint.xcor() > -450 and turtlePoint.xcor()< -350  and turtlePoint.ycor < -300  and turtlePoint.ycor > -350:
+    pass
    
 turtle.mainloop()  
 turtle.done()
